@@ -98,7 +98,14 @@ class NVD:
                     json.dump(vuln, fp, indent=4)
 
     def search_cve_info(self, cve: str) -> dict:
-        """Retrieve specific CVE information"""
+        """Retrieve specific CVE information
+
+        :param cve: CVE number to retrieve information
+        :type cve: str
+
+        :return: Returns CVE information or message of dictionary type
+        :rtype: dict
+        """
 
         url = urljoin(base=self.api, url=cve, allow_fragments=True)
 
