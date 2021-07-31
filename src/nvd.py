@@ -65,7 +65,8 @@ class NVD:
             response = requests.get(url=json_feed_url, headers=self.headers,
                                     stream=True, allow_redirects=True)
 
-            download_path = os.path.join(self.download_directory, f'CVE-{year}')
+            download_path = os.path.join(self.download_directory,
+                                         f'CVE-{year}')
             with open(file=os.path.join(download_path, decompress_file),
                       mode='wb') as fp:
                 dec_file = gzip.decompress(response.content)
