@@ -12,14 +12,12 @@ from urllib.parse import urljoin
 class NVD:
     """NVD(National Vulnerability Database) Class"""
 
-    def __init__(self, download_directory: Union[str] = None):
+    def __init__(self, download_directory: Union[str]):
         if download_directory is not None:
             if os.path.exists(download_directory):
                 self.download_directory = download_directory
             else:
                 raise FileNotFoundError
-        else:
-            self.download_directory: str = os.path.dirname(__file__)
         # NVD provides from years of 2002
         self.base_year: int = 2002
         # current year
