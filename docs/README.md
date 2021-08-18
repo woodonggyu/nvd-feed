@@ -1,8 +1,7 @@
-## NVD (National Vulnerbility Database) API Standards
+## NVD (National Vulnerbility Database) Usage
 
 * [Guidelines](#guidelines)
-* [RESTful URLs](#restful-urls)
-* [Response]()
+* [Functions](#functions)
 
 ## Guidelines
 
@@ -10,8 +9,13 @@ This document provides guidelines and examples for NVD APIs.
 
 This document borrows heavily from:
 - [NVD Data Feeds](https://nvd.nist.gov/vuln/data-feeds) 
-- attached file (Title : Automation Support for CVE Retrieve.pdf)
+- Attached (Title : Automation Support for CVE Retrieve.pdf)
 
-## RESTful URLs
-- A URL identifies a resource.
-- Use HTTP methods to operate on the collections and elements.
+## Functions
+
+### Download JSON Feeds
+
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| start | `int \| None` | **Optional**. Range (start) year to download (default: 2002) |
+| end | `int \| None` | **Optional**. Range (end) year to download (default: current year) |
