@@ -13,7 +13,16 @@ This document borrows heavily from:
 
 ## Functions
 
+Before using these module, You MUST settings path of download files for use several functions.
+
 ### Download JSON Feeds
+
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| start | `int \| None` | **Optional**. Range (start) year to download (default: 2002) |
+| end | `int \| None` | **Optional**. Range (end) year to download (default: current year) |
+
+### Extract single CVE files
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
