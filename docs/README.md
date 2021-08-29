@@ -17,21 +17,27 @@ Before using this module, You must set variable of \`download_directory\`.
 
 ### Download JSON Feeds
 
+<br>
+
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | start | `int \| None` | **Optional**. Range (start) year to download (default: 2002) |
 | end | `int \| None` | **Optional**. Range (end) year to download (default: current year) |
+
+<br>
 
 ### Extract single CVE files
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | start | `int \| None` | **Optional**. Range (start) year to download (default: 2002) |
-| end | `int \| None` | **Optional**. Range (end) year to download (default: current year) |
+| end | `int \| None` | **Optional**. Range (end) year to download (default: current year) |  
+
+<br>
 
 ### Search CVE Information
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| cve | `str` | **Required** Search to CVE number |
+| cve | `str` | **Required**. Search to CVE number |
 
