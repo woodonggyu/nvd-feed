@@ -15,9 +15,9 @@ This document borrows heavily from:
 
 Before using this module, You must set variable of \`download_directory\`.
 
-### Download JSON Feeds
-
 <br>
+
+### Download JSON Feeds
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
