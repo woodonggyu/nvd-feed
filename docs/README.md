@@ -13,7 +13,7 @@ This document borrows heavily from:
 
 ## Functions
 
-Before using these module, You MUST settings path of download files for use several functions.
+Before using this module, You must set variable of \`download_directory\`.
 
 ### Download JSON Feeds
 
@@ -28,3 +28,10 @@ Before using these module, You MUST settings path of download files for use seve
 | :--- | :--- | :--- |
 | start | `int \| None` | **Optional**. Range (start) year to download (default: 2002) |
 | end | `int \| None` | **Optional**. Range (end) year to download (default: current year) |
+
+### Search CVE Information
+
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| cve | `str` | **Required** Search to CVE number |
+
